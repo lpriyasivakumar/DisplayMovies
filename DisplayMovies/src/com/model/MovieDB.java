@@ -36,38 +36,7 @@ public class MovieDB {
 
 		return 0;
 
-	}
-
-	// public static int fetchCategoryID(String category) {
-	// Connection conn = null;
-	// Statement stmt = null;
-	// int categoryID = 0;
-	// try {
-	// Class.forName("com.mysql.jdbc.Driver");
-	// conn = DriverManager.getConnection(host, userName, pass);
-	// stmt = conn.createStatement();
-	// String selectquery = "SELECT CategoryID FROM categories WHERE
-	// CategoryName ='" + category + "'";
-	// ResultSet rs = stmt.executeQuery(selectquery);
-	// if (rs.next()) {
-	// categoryID = rs.getInt("CategoryID");
-	// }
-	//
-	// } catch (SQLException se) {
-	// se.printStackTrace();
-	// } catch (Exception e) {
-	// e.printStackTrace();
-	// } finally {
-	// try {
-	// if (stmt != null)
-	// conn.close();
-	// } catch (SQLException se) {
-	// se.printStackTrace();
-	// }
-	// }
-	//
-	// return categoryID;
-	// }
+	}	
 
 	public static ArrayList<String> fetchMovies(int categoryID) {
 		Connection conn = null;
